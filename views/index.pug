@@ -3,3 +3,8 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+  hr
+  h3 路由：
+  ul
+    each item in links
+      li: a(href=item.url) #{item.name}
